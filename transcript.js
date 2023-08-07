@@ -43,7 +43,6 @@ button2.addEventListener('click', async () => {
       socket.onmessage = (message) => {
         const received = JSON.parse(message.data)
         const transcript = received.channel.alternatives[0].transcript;
-        console.log('bruh');
         if (transcript){
           console.log(transcript);
           const durOfSpeechRaw = received.duration;
@@ -54,16 +53,17 @@ button2.addEventListener('click', async () => {
           const wordsArr = received.channel.alternatives[0].words;
           const wordCount = wordsArr.length;
           const characterCount=transcript.length-(wordCount-1);
-          const adjustedWordCount = characterCount/4.7;
+          const adjustedWordCount = characterCount/6;
           const currentWPM = (adjustedWordCount/(durOfSpeechRaw/60)).toFixed(0);
-          var wpmport = chrome.runtime.connect({name: "wpmpaths"});
-          wpmport.postMessage({wpmpaths: currentWPM});
           if (transcript==='stop recording'){
             socket.close();
             var endport = chrome.runtime.connect({name: "endpaths"});
             endport.postMessage({endpaths: 'close'});
           }
           else if (received.is_final){
+            //const currentWPM = (wordCount/(durOfSpeechRaw/60)).toFixed(0);
+            var wpmport = chrome.runtime.connect({name: "wpmpaths"});
+            wpmport.postMessage({wpmpaths: currentWPM});
             var tempStart=''; 
             var tempEnd='';
 
