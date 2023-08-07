@@ -7,9 +7,14 @@ window.setInterval(function () {
             const statustext = document.getElementById('status');
             const startButton = document.getElementById('startRecording');
             const wpm = document.getElementById('wpm');
-            wpm.style.display = "inline";
+            const wpmtext = document.getElementById('wpmtext');
+            const disconnecthelp = document.getElementById('disconnecthelp');
+            disconnecthelp.style.display="block";
+            wpm.style.display = "block";
+            wpmtext.style.display="block";
             startButton.style.display = "none";
             statustext.innerText=result.key;
+            statustext.style.color = "green";
             chrome.storage.sync.remove('key');
         }
     })
@@ -34,8 +39,13 @@ window.setInterval(function () {
         if (result.endkey){
             const statustext = document.getElementById('status');
             statustext.innerText='Disconnected';
+            statustext.style.color = "maroon";
             const wpm = document.getElementById('wpm');
+            const wpmtext = document.getElementById('wpmtext');
+            const disconnecthelp = document.getElementById('disconnecthelp');
+            disconnecthelp.style.display="none";
             wpm.style.display = "none";
+            wpmtext.style.display="none";
             chrome.storage.sync.remove('endkey');
         }
     })
@@ -46,5 +56,5 @@ window.setInterval(function () {
             chrome.storage.sync.remove('wpmkey');
         }
     })
-}, 100);
+}, 10);
 

@@ -1,4 +1,6 @@
-  chrome.runtime.onConnect.addListener(function(port) {
+
+ 
+ chrome.runtime.onConnect.addListener(function(port) {
     port.onMessage.addListener(function(msg) {
       var paths = msg.paths;
       var transcriptpaths = msg.transcriptpaths;
@@ -14,4 +16,3 @@
     });
   });
 
-  

@@ -45,7 +45,7 @@ body {
 }
 
 #status{
-    color:darkblue;
+    color:maroon;
     
 }
 
@@ -58,6 +58,7 @@ body {
 
 #transcriptlist{
     list-style-type: none;
+    margin-left:-3vw;
 }
 
 #transcriptwords{
@@ -74,9 +75,27 @@ body {
     display:inline;
 }
 
+#wpmcontent{
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+
+}
 
 #wpm{
     display:none;
     font-weight:bolder;
     font-size:100px;
+}
+
+#wpmtext{
+    display:none;
+    font-weight:bolder;
+    font-size:50px;
+    margin-top:-20vw;
+}
+
+#disconnecthelp{
+    display:none;
+    margin-bottom:-10vw;
 }

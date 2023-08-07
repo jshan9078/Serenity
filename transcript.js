@@ -38,7 +38,7 @@ button2.addEventListener('click', async () => {
             socket.send(event.data)
           }
         })
-        mediaRecorder.start(100);
+        mediaRecorder.start(10);
       }
       socket.onmessage = (message) => {
         const received = JSON.parse(message.data)
