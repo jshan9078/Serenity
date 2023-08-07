@@ -32,6 +32,7 @@ window.setInterval(function () {
             node.appendChild(timestamp);
             node.appendChild(transcriptwords);
             transcriptlist.appendChild(node);
+            window.scrollBy(0, 10);
             chrome.storage.sync.remove('transcriptkey');
         }
     })
