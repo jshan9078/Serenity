@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.22.10",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
+    "dotenv-webpack": "^8.0.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "raw-loader": "^4.0.2",
@@ -23,6 +25,7 @@
   },
   "dependencies": {
     "dompurify": "^3.0.5",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security"
   }
 }
