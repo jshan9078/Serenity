@@ -47,6 +47,8 @@ window.setInterval(function () {
             disconnecthelp.style.display="none";
             wpm.style.display = "none";
             wpmtext.style.display="none";
+            const transcriptdiv = document.getElementById('features');
+            transcriptdiv.style.marginTop="100px";
             chrome.storage.sync.remove('endkey');
         }
     })

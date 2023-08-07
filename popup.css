@@ -108,5 +108,6 @@ body {
 
 #disconnecthelp{
     display:none;
+    font-size:15px;
     margin-bottom:-10vw;
 }
