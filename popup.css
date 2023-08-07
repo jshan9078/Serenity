@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+    --font-poppins: "Poppins";
+}
+
+body {
+    font-family: var(--font-poppins);
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+#openSidePanel {
+    font-family: var(--font-poppins);
+    background-color: #3e77b5;
+    color:black;
+    font-size:7px;
+    width:200px;
+    border-radius:2vw;
+    margin-bottom:3vw;
+    cursor:pointer;
+}
+
+#openSidePanel:hover {
+    background-color: #95b8de;
+}
+
+#startRecording{
+    font-family: var(--font-poppins);
+    font-weight:500;
+    background-color: lightgreen;
+    border-radius:2vw;
+    color:black;
+    margin-top:5vw;
+    width:250px;
+    cursor:pointer;
+    font-size:10vw;
+    display:inline;
+}
+
+#startRecording:hover{
+    background-color:lightseagreen;
+}
+
+#status{
+    color:darkblue;
+    
+}
+
+#mainButtons{
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#transcriptlist{
+    list-style-type: none;
+}
+
+#transcriptwords{
+    font-weight:700;
+    font-size:4vw;
+    color:black;
+    display:inline;
+}
+
+#timestamp{
+    font-size:4vw;
+    font-weight:700;
+    color:darkviolet;
+    display:inline;
+}
+
+
+#wpm{
+    display:none;
+    font-weight:bolder;
+    font-size:100px;
+}
