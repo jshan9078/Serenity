@@ -12,6 +12,15 @@ Serenity is a chrome extension that uses Chome's side panel feature. When you hi
 
 The tool can help teachers keep pace and can help students practice/deliver presentations.
 
+## Technologies
+- Manifest V3
+- Deepgram API
+- Side Panel API (Chrome Beta)
+- WebSocket
+- HTML CSS JS
+- Node
+- Webpack 
+
 ## Examples
 *Landing Page*
 ![Landing Page](https://cdn.discordapp.com/attachments/928022919337103393/1138345269335949332/pic1.jpg)
