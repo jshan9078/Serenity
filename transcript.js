@@ -44,7 +44,6 @@ button2.addEventListener('click', async () => {
         const received = JSON.parse(message.data)
         const transcript = received.channel.alternatives[0].transcript;
         if (transcript){
-          console.log(transcript);
           const durOfSpeechRaw = received.duration;
           const startOfSpeechRaw = received.start;
           const endOfSpeechRaw = durOfSpeechRaw+startOfSpeechRaw;
@@ -57,13 +56,17 @@ button2.addEventListener('click', async () => {
           const currentWPM = (adjustedWordCount/(durOfSpeechRaw/60)).toFixed(0);
           if (transcript==='stop recording'){
             socket.close();
+
             var endport = chrome.runtime.connect({name: "endpaths"});
             endport.postMessage({endpaths: 'close'});
           }
           else if (received.is_final){
-            //const currentWPM = (wordCount/(durOfSpeechRaw/60)).toFixed(0);
+
             var wpmport = chrome.runtime.connect({name: "wpmpaths"});
             wpmport.postMessage({wpmpaths: currentWPM});
+
+            
+            
             var tempStart=''; 
             var tempEnd='';
 

@@ -1,6 +1,9 @@
 /*global chrome*/
 /* eslint-disable no-undef */
 
+import Chart from './node_modules/chart.js/auto/auto.js';
+
+
 window.setInterval(function () {
     chrome.storage.sync.get(['key'], function(result) {
         if (result.key){
@@ -34,7 +37,7 @@ window.setInterval(function () {
             node.appendChild(timestamp);
             node.appendChild(transcriptwords);
             transcriptlist.appendChild(node);
-            window.scrollBy(0, 50);
+            window.scrollBy(0, 20);
             chrome.storage.sync.remove('transcriptkey');
         }
     })
