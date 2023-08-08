@@ -4,13 +4,30 @@ A chrome extension to monitor and control your speech speed during presentations
 ## Installation
 Serenity will be soon available on the Chrome Web Store, but for now you can download this repository and add it manually to your Google Chrome. Simply upload the whole folder. Make sure to use the Google Chrome Beta, as the Side Panel API is not yet available for the stable release.
 
-## Inspiration
-I was inspired to build this project because I have always struggled to keep up with teachers that speak somewhat fast. I've also zoned out a lot with some teachers who speak quite slowly. A lot of times, they may not be aware of it either. Moreover, students may not be able to comfortably tell the teacher to slow down. On the other hand, as a student myself, I struggle to make sure I am speaking at an appropriate pace. I have been told by peers and teachers that I speak too fast which could be a result of a multitude of factors such as nervousness or excitement.
-
 ## What it does
 Serenity is a chrome extension that uses Chome's side panel feature. When you hit the start button, it'll start recording you using the microphone. It will begin to show a live transcription as well. Every time you take a pause, perhaps between sentences, the speed of speech will update and provide cues on if you should slow down or keep going at the current pace. You can stop recording by verbally stating,  'stop recording'. The recording will then stop and display the full transcription of what you said.
 
 The tool can help teachers keep pace and can help students practice/deliver presentations.
+
+## Examples
+*Landing Page*
+![Landing Page](https://cdn.discordapp.com/attachments/928022919337103393/1138345269335949332/pic1.jpg)
+
+*Good Pace*
+![Good Pace](https://cdn.discordapp.com/attachments/928022919337103393/1138345269608599592/pic2.jpg)
+
+*Slow Down*
+![Slow Down](https://cdn.discordapp.com/attachments/928022919337103393/1138345268992032819/pic5.jpg)
+
+*Too Fast*
+![Too Fast](https://cdn.discordapp.com/attachments/928022919337103393/1138345268597751920/pic4.jpg)
+
+*Transcript Once Done*
+![Landing Page](https://cdn.discordapp.com/attachments/928022919337103393/1138345268266418267/pic3.jpg)
+
+
+## Inspiration
+I was inspired to build this project because I have always struggled to keep up with teachers that speak somewhat fast. I've also zoned out a lot with some teachers who speak quite slowly. A lot of times, they may not be aware of it either. Moreover, students may not be able to comfortably tell the teacher to slow down. On the other hand, as a student myself, I struggle to make sure I am speaking at an appropriate pace. I have been told by peers and teachers that I speak too fast which could be a result of a multitude of factors such as nervousness or excitement.
 
 ## How I built it
 I built it using **Manifest V3**, chrome's web extension API. I used the new beta **Side Panel API** to create a better experience. The Side panel is capable of allowing the recording to continue **no matter what window or tab you switch to.** The user interface was designed with **HTML CSS JS**. Natural language processing was done with **Deepgram's API**. I established a web socket between the extension and Deepgram which enabled the extension to relay raw recording data to the API and retrieve parsed information such as the duration of speech and words stated. Lastly, the extension was set into production using **Webpack** for bundling.
