@@ -1,7 +1,6 @@
 /*global chrome*/
 /* eslint-disable no-undef */
 
-import Chart from './node_modules/chart.js/auto/auto.js';
 
 
 window.setInterval(function () {
