@@ -2,7 +2,15 @@
 A chrome extension to monitor and control your speech speed during presentations
 
 ## Installation
-Serenity will be soon available on the Chrome Web Store, but for now you can download this repository and add it manually to your Google Chrome. Simply upload the whole folder. Make sure to use the Google Chrome Beta, as the Side Panel API is not yet available for the stable release.
+Serenity will be soon available on the Chrome Web Store, but for now you can download this repository and add it manually to your Google Chrome. Follow these steps.
+- Download [Chrome Beta](https://www.google.com/intl/en_ca/chrome/beta/)
+- Download this repository
+- Unzip the download
+- Click the puzzle piece icon in the Chrome toolbar and click 'Manage Extensions' (in Chrome Beta)
+- Turn on developer mode (top right)
+- Click 'load unpacked'
+- In the popup, head to your downloads folder, double click on "Serenty-main" (the extracted one). You will then see another "Serenity-main". Single click on this folder. Then, just hit 'select folder'.
+- You're ready to go!
 
 ## What it does
 
