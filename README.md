@@ -1,11 +1,11 @@
 # Serenity
 A chrome extension to monitor and control your speech speed during presentations
 
-## Inspiration
-I was inspired to build this project because I have always struggled to keep up with teachers that speak somewhat fast. I've also zoned out a lot with some teachers who speak quite slowly. A lot of times, they may not be aware of it either. Moreover, students may not be able to comfortably tell the teacher to slow down. On the other hand, as a student myself, I struggle to make sure I am speaking at an appropriate pace. I have been told by peers and teachers that I speak too fast which could be a result of a multitude of factors such as nervousness or excitement.
-
 ## Installation
 Serenity will be soon available on the Chrome Web Store, but for now you can download this repository and add it manually to your Google Chrome. Simply upload the whole folder. Make sure to use the Google Chrome Beta, as the Side Panel API is not yet available for the stable release.
+
+## Inspiration
+I was inspired to build this project because I have always struggled to keep up with teachers that speak somewhat fast. I've also zoned out a lot with some teachers who speak quite slowly. A lot of times, they may not be aware of it either. Moreover, students may not be able to comfortably tell the teacher to slow down. On the other hand, as a student myself, I struggle to make sure I am speaking at an appropriate pace. I have been told by peers and teachers that I speak too fast which could be a result of a multitude of factors such as nervousness or excitement.
 
 ## What it does
 Serenity is a chrome extension that uses Chome's side panel feature. When you hit the start button, it'll start recording you using the microphone. It will begin to show a live transcription as well. Every time you take a pause, perhaps between sentences, the speed of speech will update and provide cues on if you should slow down or keep going at the current pace. You can stop recording by verbally stating,  'stop recording'. The recording will then stop and display the full transcription of what you said.
