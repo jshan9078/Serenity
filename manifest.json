@@ -4,7 +4,14 @@
     "version": "1.0.1",
     "description": "A chrome extension to monitor and control your speech speed during presentations",
     "action": {
-        "default_popup":"popup.html"
+        "default_popup":"popup.html",
+        "default_icon": {
+          
+            "16":"serenityicon.png",
+            "48":"serenityicon.png",
+            "128":"serenityicon.png"
+         
+        }
     },
     "permissions": ["tabs","scripting","activeTab","offscreen","tabCapture","sidePanel","contextMenus","storage"],
     "host_permissions": [
@@ -18,10 +25,6 @@
     "side_panel": {
       "default_path": "sidepanel.html"
     },
-    "minimum_chrome_version": "116",
-    "icons":{
-      "16":"serenityicon.jpg",
-      "48":"serenityicon.jpg",
-      "128":"serenityicon.jpg"
-    }
+    "minimum_chrome_version": "116"
+    
 }

@@ -1,22 +1,30 @@
 {
-    "manifest_version": 3,
-    "name": "Serenity",
-    "version": "1.0.1",
-    "description": "A chrome extension to monitor and control your speech speed during presentations",
-    "action": {
-        "default_popup":"popup.html"
-    },
-    "permissions": ["tabs","scripting","activeTab","offscreen","tabCapture","sidePanel","contextMenus","storage"],
-    "host_permissions": [
-    "http://*/",
-    "https://*/"
-    ],
-    "background": {
-      "service_worker": "serviceWorker.js",
-      "type": "module"
-    },
-    "side_panel": {
-      "default_path": "sidepanel.html"
-    },
-    "minimum_chrome_version": "116"
+  "manifest_version": 3,
+  "name": "Serenity",
+  "version": "1.0.1",
+  "description": "A chrome extension to monitor and control your speech speed during presentations",
+  "action": {
+      "default_popup":"popup.html",
+      "default_icon": {
+        
+          "16":"serenityicon.png",
+          "48":"serenityicon.png",
+          "128":"serenityicon.png"
+       
+      }
+  },
+  "permissions": ["tabs","scripting","activeTab","offscreen","tabCapture","sidePanel","contextMenus","storage"],
+  "host_permissions": [
+  "http://*/",
+  "https://*/"
+  ],
+  "background": {
+    "service_worker": "serviceWorker.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "minimum_chrome_version": "116"
+  
 }
