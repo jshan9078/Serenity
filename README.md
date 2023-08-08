@@ -8,7 +8,7 @@ Serenity will be soon available on the Chrome Web Store, but for now you can dow
 
 Video: `https://www.youtube.com/watch?v=CXMhdcRRdu8&ab_channel=JonathanS.`
 
-Serenity is a chrome extension that uses Chome's side panel feature. When you hit the start button, it'll start recording you using the microphone. It will begin to show a live transcription as well. Every time you take a pause, perhaps between sentences, the speed of speech will update and provide cues on if you should slow down or keep going at the current pace. You can stop recording by verbally stating,  'stop recording'. The recording will then stop and display the full transcription of what you said.
+Serenity is a chrome extension that uses Chome's side panel feature. When you hit the start button, it'll start recording you using the microphone. It will begin to show a live transcription as well. Every time you take a pause, perhaps between sentences, the speed of speech will update and provide cues on if you should slow down or keep going at the current pace. **You can stop recording by verbally stating,  'stop recording'**. The recording will then stop and display the full transcription of what you said.
 
 The tool can help teachers keep pace and can help students practice/deliver presentations.
 
