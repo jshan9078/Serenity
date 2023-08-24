@@ -27,7 +27,7 @@ button2.addEventListener('click', async () => {
       const trustedURL = myPolicy.createScriptURL('wss://api.deepgram.com/v1/listen').toString();
       const socket = new WebSocket(trustedURL, [
         'token',
-        '9a8e2e80b50db851d539b6270239b710878f8877',
+        'DEEPGRAM_API_TOKEN',
       ])
       var port = chrome.runtime.connect({name: "paths"});
       var spaths = 'Connected';
