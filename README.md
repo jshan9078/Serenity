@@ -3,6 +3,7 @@ A chrome extension to monitor and control your speech speed during presentations
 
 ## Installation
 Simply install it from the Chrome Web Store: [`https://chrome.google.com/webstore/detail/serenity/pmddnkncdffbjgjpoegkakfaeacggdpj`](https://chrome.google.com/webstore/detail/serenity/pmddnkncdffbjgjpoegkakfaeacggdpj)
+
 You're ready to go!
 
 ## What it does
